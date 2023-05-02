@@ -1,0 +1,105 @@
+.NavBar {
+    position: absolute !important;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    background-color: #00799a;
+    top: 0%;
+    left: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: #000000;
+  }
+  
+  .bar {
+    height: 8.02%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bar li {
+    display: inline-block;
+  }
+
+  #home{
+    margin-top: 150px;
+  }
+  
+  /* .right {
+    display: inline-block;
+    padding-right: 1%;
+    text-decoration: none;
+  } */
+  .right a {
+    /* float: right; */
+    color: #494949;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .right a:hover {
+    border: #000000;
+    color: #d71103;
+    padding-right: 20px;
+  }
+
+  img {
+    padding: 0%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .title{
+    padding-right: 800px;
+  }
+
+  /* Flip Cards */
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
